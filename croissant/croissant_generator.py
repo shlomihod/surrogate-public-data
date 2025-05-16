@@ -1,3 +1,4 @@
+import time
 import pandas as pd
 import json
 import hashlib
@@ -155,7 +156,7 @@ def generate_croissant_jsonl(data_csv_path, metadata_json_path, output_jsonl_pat
 
 
 if __name__ == "__main__":
-    base_url = "https://raw.githubusercontent.com/shlomihod/YDNPD/refs/heads/main/ydnpd/datasets/data"
+    base_url = "https://raw.githubusercontent.com/shlomihod/surrogate-public-data/refs/heads/main/ydnpd/datasets/data"
     for ds in ["acs", "we", "edad"]:
         for baseline in  ["baseline_domain", "baseline_univariate", "arbitrary"]:
             data_csv      = f"{base_url}/{ds}/{baseline}.csv"
@@ -163,6 +164,7 @@ if __name__ == "__main__":
             output_file   = f"{ds}_{baseline}_croissant.json"
             generate_croissant_jsonl(data_csv, metadata_json, output_file)
             print(f"gen {output_file}")
+            time.sleep(5)
             try:
                 res = subprocess.run(
                     ["mlcroissant", "validate", "--jsonld", output_file],
@@ -170,9 +172,11 @@ if __name__ == "__main__":
                     capture_output=True,
                     text=True
                 )
-                print(f"[OK]   {ds}:")
+                print(f"[OK]   {ds} {baseline} {data_csv}")
                 print(res.stdout)
             except subprocess.CalledProcessError as e:
                 print(f"[ERR]  {ds} ({output_file}) failed validation:")
                 print(e.stdout)
                 print(e.stderr)
+            time.sleep(5)
+            

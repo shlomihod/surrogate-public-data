@@ -51,7 +51,7 @@
     {
       "@id": "arbitrary.csv",
       "@type": "sc:FileObject",
-      "contentUrl": "https://raw.githubusercontent.com/shlomihod/YDNPD/refs/heads/main/ydnpd/datasets/data/edad/arbitrary.csv",
+      "contentUrl": "https://raw.githubusercontent.com/shlomihod/surrogate-public-data/refs/heads/main/ydnpd/datasets/data/edad/arbitrary.csv",
       "encodingFormat": "text/csv",
       "name": "arbitrary.csv",
       "sha256": "3df57bbf7e7bc288ccb0f904a82e6227d728afb5214e7cffa72ebfee1ba4d915"

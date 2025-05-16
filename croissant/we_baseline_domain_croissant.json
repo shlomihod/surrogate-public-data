@@ -51,7 +51,7 @@
     {
       "@id": "baseline_domain.csv",
       "@type": "sc:FileObject",
-      "contentUrl": "https://raw.githubusercontent.com/shlomihod/YDNPD/refs/heads/main/ydnpd/datasets/data/we/baseline_domain.csv",
+      "contentUrl": "https://raw.githubusercontent.com/shlomihod/surrogate-public-data/refs/heads/main/ydnpd/datasets/data/we/baseline_domain.csv",
       "encodingFormat": "text/csv",
       "name": "baseline_domain.csv",
       "sha256": "ce0d2f67949ef15daed6a2ad3a2c3a5f14ccc35c20f12a088942752d2ff79029"

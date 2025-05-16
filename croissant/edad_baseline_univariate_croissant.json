@@ -51,7 +51,7 @@
     {
       "@id": "baseline_univariate.csv",
       "@type": "sc:FileObject",
-      "contentUrl": "https://raw.githubusercontent.com/shlomihod/YDNPD/refs/heads/main/ydnpd/datasets/data/edad/baseline_univariate.csv",
+      "contentUrl": "https://raw.githubusercontent.com/shlomihod/surrogate-public-data/refs/heads/main/ydnpd/datasets/data/edad/baseline_univariate.csv",
       "encodingFormat": "text/csv",
       "name": "baseline_univariate.csv",
       "sha256": "84ce442b0a26f678daf5febd274e5c69e71f132833529d59ccdb8de8a3ed8cee"
