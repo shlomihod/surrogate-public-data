@@ -1,0 +1,170 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileObject": "cr:fileObject",
+    "fileProperty": "cr:fileProperty",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "citation": "Hod, Shlomi; Rosenblatt, Lucas; Stoyanovich, Julia. Do You Really Need Public Data? Surrogate Public Data for Differential Privacy on Tabular Data. arXiv preprint arXiv:2504.14368, 2025.",
+  "datePublished": "2025",
+  "distribution": [
+    {
+      "@id": "arbitrary.csv",
+      "@type": "sc:FileObject",
+      "contentUrl": "https://raw.githubusercontent.com/shlomihod/YDNPD/refs/heads/main/ydnpd/datasets/data/acs/arbitrary.csv",
+      "encodingFormat": "text/csv",
+      "name": "arbitrary.csv",
+      "sha256": "2f4faae3946832fadfcfe946bd8476534581c35b997969e5ab14d2dd68955632"
+    }
+  ],
+  "license": "https://opensource.org/licenses/MIT",
+  "name": "arbitrary",
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "description": "Columns from tabular data.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "dataType": "sc:Integer",
+          "description": "Housing unit rented or owned",
+          "name": "OWN_RENT",
+          "source": {
+            "extract": {
+              "column": "OWN_RENT"
+            },
+            "fileObject": {
+              "@id": "arbitrary.csv"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "dataType": "sc:Integer",
+          "description": "Person's Race",
+          "name": "RAC1P",
+          "source": {
+            "extract": {
+              "column": "RAC1P"
+            },
+            "fileObject": {
+              "@id": "arbitrary.csv"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "dataType": "sc:Integer",
+          "description": "Housing unit or group quarters",
+          "name": "HOUSING_TYPE",
+          "source": {
+            "extract": {
+              "column": "HOUSING_TYPE"
+            },
+            "fileObject": {
+              "@id": "arbitrary.csv"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "dataType": "sc:Text",
+          "description": "Person's total income rank (with respect to their state) discretized into 10% bins",
+          "name": "PINCP_DECILE",
+          "source": {
+            "extract": {
+              "column": "PINCP_DECILE"
+            },
+            "fileObject": {
+              "@id": "arbitrary.csv"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "dataType": "sc:Text",
+          "description": "Marital Status",
+          "name": "MSP",
+          "source": {
+            "extract": {
+              "column": "MSP"
+            },
+            "fileObject": {
+              "@id": "arbitrary.csv"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "dataType": "sc:Text",
+          "description": "Educational attainment",
+          "name": "EDU",
+          "source": {
+            "extract": {
+              "column": "EDU"
+            },
+            "fileObject": {
+              "@id": "arbitrary.csv"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "dataType": "sc:Integer",
+          "description": "Person's gender",
+          "name": "SEX",
+          "source": {
+            "extract": {
+              "column": "SEX"
+            },
+            "fileObject": {
+              "@id": "arbitrary.csv"
+            }
+          }
+        }
+      ],
+      "name": "records"
+    }
+  ],
+  "version": "0.1"
+}
