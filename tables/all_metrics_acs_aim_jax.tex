@@ -1,0 +1,30 @@
+\begin{table}[t!]
+    \centering
+    \caption{ACS Metrics}
+    \label{tab:all_metrics_acs}
+    \resizebox{\linewidth}{!}{%
+    \begin{tabular}{lccc}
+    \toprule
+    Method & \% Degradation (Class.) & \% Degradation (Corr.) & \% Degradation (Marg.) \\
+    \midrule
+    acs/gen-llama-MIX-UNIF & \cellcolor{gold!30}0.129 & 0.179 & 0.541 \\
+    acs/baseline_domain & \cellcolor{silver!30}0.142 & 1.945 & \cellcolor{gold!30}0.036 \\
+    acs/massachusetts_upsampled & \cellcolor{bronze!30}0.161 & 0.240 & \cellcolor{bronze!30}0.064 \\
+    acs/csv-llama & 0.174 & 1.158 & 0.439 \\
+    acs/gen-llama-MIX-MAX & 0.201 & \cellcolor{silver!30}0.101 & \cellcolor{silver!30}0.059 \\
+    acs/gen-claude-MIX-UNIF & 0.261 & \cellcolor{gold!30}0.099 & 0.549 \\
+    acs/gen-MIX-MAX & 0.262 & 0.486 & 0.134 \\
+    acs/gen-MIX-UNIF & 0.346 & 0.229 & 0.128 \\
+    acs/gen-gpt-MIX-MAX & 0.379 & 0.215 & 0.165 \\
+    acs/csv-claude & 0.641 & 0.315 & 0.494 \\
+    acs/sdscm-llama-3-8b & 0.846 & 0.235 & 0.999 \\
+    acs/gen-claude-MIX-MAX & 1.465 & \cellcolor{bronze!30}0.177 & 0.501 \\
+    acs/csv-gpt & 1.636 & 1.295 & 0.413 \\
+    acs/sdscm-olmo-1b-hf & 1.670 & 0.569 & 1.061 \\
+    acs/gen-gpt-MIX-UNIF & 2.350 & 0.764 & 0.255 \\
+    acs/sdscm-gpt2 & 2.461 & 0.323 & 0.533 \\
+    acs/arbitrary & 2.542 & 0.669 & 0.097 \\
+    acs/baseline_univariate & 4.047 & 1.057 & 0.149 \\
+    \bottomrule
+    \end{tabular}}
+\end{table}

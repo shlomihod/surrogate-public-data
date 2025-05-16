@@ -1,0 +1,229 @@
+{
+    "domain": "Spanish disability, autonomy, and dependency survey",
+    "references": [
+        "https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176782&menu=resultados&idp=1254735573175#_tabs-1254736195313"
+    ],
+    "schema": {
+      "CCAA": {
+        "description": "Autonomous Community",
+        "dtype": "int64",
+        "values": {
+          "1": "Andalucía",
+          "2": "Aragón",
+          "3": "Asturias, Principado de",
+          "4": "Balears, Illes",
+          "5": "Canarias",
+          "6": "Cantabria",
+          "7": "Castilla y León",
+          "8": "Castilla - La Mancha",
+          "9": "Cataluña",
+          "10": "Comunitat Valenciana",
+          "11": "Extremadura",
+          "12": "Galicia",
+          "13": "Madrid, Comunidad de",
+          "14": "Murcia, Región de",
+          "15": "Navarra, Comunidad Foral de",
+          "16": "País Vasco",
+          "17": "Rioja, La",
+          "18": "Ceuta",
+          "19": "Melilla"
+        }
+      },
+      "SEXO": {
+        "description": "Gender of the person with disability",
+        "dtype": "int64",
+        "values": {
+          "1": "Male",
+          "2": "Female"  
+        }
+      },
+      "EDAD": {
+        "description": "Age group of the person with disability",
+        "dtype": "int64",
+        "values": {
+          "1": "0-15 years",
+          "2": "16-34 years",
+          "3": "35-49 years",
+          "4": "50-64 years",
+          "5": "65-80 years",
+          "6": "80+ years"
+        }
+      },
+      "ECIVIL": {
+        "description": "Marital status",
+        "dtype": "int64",
+        "values": {
+          "1": "Single",
+          "2": "Married",
+          "3": "Widowed",
+          "4": "Separated",
+          "5": "Divorced"
+        }
+      },
+      "NACIO": {
+        "description": "Nationality",
+        "dtype": "int64",
+        "values": {
+          "1": "Spanish",
+          "2": "Foreign",
+          "3": "Double nationality"  
+        }
+      },
+      "ESTUDIO": {
+        "description": "Highest level of education completed",
+        "dtype": "int64",
+        "values": {
+          "1": "Cannot read or write",
+          "2": "Incomplete primary", 
+          "3": "Primary or equivalent",
+          "4": "Secondary 1st stage",
+          "5": "Secondary 2nd stage",
+          "6": "Intermediate professional education",
+          "7": "Higher professional education",  
+          "8": "University studies"
+        }
+      },
+      "RELACT": {
+        "description": "Main labour market activity status",
+        "dtype": "int64", 
+        "values": {
+          "1": "Employed",
+          "2": "Unemployed",
+          "3": "Retired",
+          "4": "Student",
+          "5": "Unable to work",
+          "6": "Doing unpaid social work or charitable activities",
+          "7": "Other inactive person"
+        }
+        
+      },
+      "CERTIG": {
+        "description": "Degree of disability",
+        "dtype": "int64",
+        "values": {
+          "1": "0-32%",
+          "2": "33-44%", 
+          "3": "45-64%",
+          "4": "65-74%",
+          "5": "75% or more",
+          "6": "Not known"
+        }
+      },
+      "DEPENG": {
+        "description": "Degree of dependency",
+        "dtype": "int64", 
+        "values": {
+          "1": "Grade I Moderate dependence",
+          "2": "Grade II Severe dependence",  
+          "3": "Grade III Major dependence"
+        }
+      },
+      "VISI_2_1": {
+        "description": "Has significant difficulty reading standard newspaper print",
+        "dtype": "int64",
+        "values": {
+          "1": "Yes",
+          "2": "No" 
+        }
+      },
+      "AUDI_7_1": {
+        "description": "Has significant difficulty hearing a conversation with several people without a hearing aid",
+        "dtype": "int64",
+        "values": {
+          "1": "Yes",
+          "2": "No"
+        }
+      },
+      "COMU_8_1": {
+        "description": "Has significant difficulty speaking in an understandable way or saying meaningful phrases without aids",
+        "dtype": "int64", 
+        "values": {
+          "1": "Yes",
+          "2": "No"
+        }
+      },
+      "COMU_9_1": {
+        "description": "Has significant difficulty understanding what others are saying without assistance from other people",
+        "dtype": "int64",
+        "values": {
+          "1": "Yes",
+          "2": "No"  
+        }  
+      },
+      "MOVI_21_1": {
+        "description": "Has significant difficulty walking or moving around within the center without aids and without supervision",
+        "dtype": "int64",
+        "values": {
+          "1": "Yes", 
+          "2": "No"
+        }
+      },
+      "MOVI_22_1": {
+        "description": "Has significant difficulty walking or moving around outside the center without aids and without supervision",
+        "dtype": "int64",
+        "values": {
+          "1": "Yes",
+          "2": "No"
+        }
+      }, 
+      "MOVI_25_1": {
+        "description": "Has significant difficulty handling and moving objects, using hands and arms without aids and without supervision", 
+        "dtype": "int64",
+        "values": {
+          "1": "Yes",
+          "2": "No"
+        }
+      },
+      "AUTO_29_1": {
+        "description": "Has significant difficulty going to the bathroom and taking care of toilet needs or intimate hygiene without aids and without supervision",
+        "dtype": "int64", 
+        "values": {
+          "1": "Yes",
+          "2": "No" 
+        }
+      },
+      "AUTO_31_1": {
+        "description": "Has significant difficulty carrying out the tasks of eating or drinking without aids and without supervision",
+        "dtype": "int64",
+        "values": {  
+          "1": "Yes",
+          "2": "No"
+        }
+      },
+      "AUTO_33_1": {
+        "description": "Has significant difficulty avoiding danger situations in daily life without aids and without supervision",
+        "dtype": "int64",
+        "values": {
+          "1": "Yes", 
+          "2": "No"
+        }
+      },
+      "RELA_39_1": {
+        "description": "Has significant difficulty creating and maintaining relationships with center staff",
+        "dtype": "int64",
+        "values": {
+          "1": "Yes",
+          "2": "No"  
+        }
+      },
+      "RELA_41_1": {
+        "description": "Has significant difficulty maintaining relationships with family members", 
+        "dtype": "int64",
+        "values": {
+          "1": "Yes",
+          "2": "No"
+        }    
+      },
+      "D_1": {
+        "description": "State of health",
+        "dtype": "int64", 
+        "values": { 
+          "1": "Very good",
+          "2": "Good",
+          "3": "Fair",
+          "4": "Poor",
+          "5": "Very poor"
+        }
+      }
+    }
+  }

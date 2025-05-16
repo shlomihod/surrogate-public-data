@@ -1,0 +1,32 @@
+\begin{table}[h!]
+    \centering
+    \caption{Mean AUC of the DP model on ACS data after pretraining, grouped by generation method. The mean is calculated across the hyperparameter space, with 10 runs per hyperparameter configuration.}
+    \label{tab:epsilon_comparison}
+    \begin{tabular}{lccccc}
+    \toprule
+    Method & $\varepsilon=1$ & $\varepsilon=2$ & $\varepsilon=4$ & $\varepsilon=8$ & $\varepsilon=16$ \\
+    \midrule
+    Without pretraining & .00 {\small (.56)} & .00 {\small (.62)} & .00 {\small (.65)} & .00 {\small (.67)} & .00 {\small (.70)} \\
+    \arrayrulecolor{black!50!}\midrule
+    Public & .12 {\small (.67)} & .07 {\small (.70)} & .07 {\small (.72)} & .06 {\small (.73)} & .04 {\small (.74)} \\
+    \arrayrulecolor{black!50!}\midrule
+    Baseline (Domain) & .09 {\small (.65)} & .05 {\small (.67)} & .04 {\small (.69)} & .04 {\small (.71)} & .02 {\small (.72)} \\
+    Baseline (Univariate) & .08 {\small (.64)} & .04 {\small (.66)} & .04 {\small (.69)} & .03 {\small (.70)} & .02 {\small (.72)} \\
+    \arrayrulecolor{black!50!}\midrule
+    Arbitrary & .04 {\small (.60)} & .03 {\small (.65)} & .01 {\small (.66)} & .01 {\small (.68)} & .01 {\small (.71)} \\
+    \arrayrulecolor{black!50!}\midrule
+    CSV (Claude 3.5 Sonnet) & \cellcolor{bronze!30}.14 {\small (.69)} & \cellcolor{bronze!30}.09 {\small (.71)} & \cellcolor{gold!30}.08 {\small (.73)} & \cellcolor{silver!30}.07 {\small (.74)} & \cellcolor{gold!30}.05 {\small (.75)} \\
+    CSV (GPT-4o) & \cellcolor{silver!30}.14 {\small (.69)} & \cellcolor{silver!30}.09 {\small (.72)} & \cellcolor{silver!30}.08 {\small (.73)} & \cellcolor{bronze!30}.06 {\small (.73)} & \cellcolor{bronze!30}.05 {\small (.74)} \\
+    CSV (Llama 3.3 70B) & \cellcolor{gold!30}.14 {\small (.70)} & \cellcolor{gold!30}.10 {\small (.72)} & \cellcolor{silver!30}.08 {\small (.72)} & \cellcolor{gold!30}.07 {\small (.74)} & \cellcolor{silver!30}.05 {\small (.75)} \\
+    \arrayrulecolor{black!50!}\midrule
+    Agent (Claude 3.5 Sonnet, Unif.) & .13 {\small (.69)} & .09 {\small (.71)} & \cellcolor{silver!30}.08 {\small (.72)} & .06 {\small (.73)} & .05 {\small (.74)} \\
+    Agent (Claude 3.5 Sonnet, Max Cov.) & .12 {\small (.68)} & .08 {\small (.70)} & .06 {\small (.71)} & .05 {\small (.72)} & .03 {\small (.73)} \\
+    Agent (GPT-4o, Unif.) & .08 {\small (.64)} & .04 {\small (.66)} & .04 {\small (.69)} & .03 {\small (.70)} & .02 {\small (.71)} \\
+    Agent (GPT-4o, Max Cov.) & .11 {\small (.67)} & .07 {\small (.69)} & .06 {\small (.71)} & .04 {\small (.72)} & .04 {\small (.73)} \\
+    Agent (Llama 3.3 70B, Unif.) & .11 {\small (.67)} & .07 {\small (.69)} & .06 {\small (.71)} & .05 {\small (.72)} & .03 {\small (.73)} \\
+    Agent (Llama 3.3 70B, Max Cov.) & .13 {\small (.69)} & .08 {\small (.70)} & \cellcolor{bronze!30}.07 {\small (.72)} & .06 {\small (.73)} & .04 {\small (.74)} \\
+    Agent (Unif.) & .12 {\small (.68)} & .08 {\small (.70)} & .07 {\small (.72)} & .06 {\small (.73)} & .04 {\small (.74)} \\
+    Agent (Max Cov.) & .11 {\small (.67)} & .06 {\small (.68)} & .06 {\small (.71)} & .04 {\small (.71)} & .03 {\small (.73)} \\
+    \bottomrule
+    \end{tabular}
+\end{table}

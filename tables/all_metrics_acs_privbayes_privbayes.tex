@@ -1,0 +1,26 @@
+\begin{table}[t!]
+    \centering
+    \caption{ACS Metrics}
+    \label{tab:all_metrics_acs_privbayes}
+    \begin{tabular}{lccc}
+    \toprule
+    Method & \% Degradation (Class.) & \% Degradation (Corr.) & \% Degradation (Marg.) \\
+    \midrule
+    acs/gen-MIX-UNIF & \cellcolor{gold!30}0.006 & 5.673 & 1.179 \\
+    acs/gen-llama-MIX-UNIF & \cellcolor{silver!30}0.010 & 3.952 & 1.586 \\
+    acs/csv-llama & \cellcolor{bronze!30}0.012 & 4.576 & 1.269 \\
+    acs/gen-MIX-MAX & 0.013 & 4.735 & 1.357 \\
+    acs/arbitrary & 0.014 & 3.753 & \cellcolor{silver!30}0.552 \\
+    acs/massachusetts_upsampled & 0.015 & 3.680 & 1.382 \\
+    acs/gen-claude-MIX-MAX & 0.015 & 5.159 & 1.048 \\
+    acs/gen-gpt-MIX-UNIF & 0.016 & 4.148 & \cellcolor{bronze!30}0.733 \\
+    acs/gen-claude-MIX-UNIF & 0.018 & 3.932 & 0.833 \\
+    acs/gen-gpt-MIX-MAX & 0.019 & 4.063 & 0.833 \\
+    acs/gen-llama-MIX-MAX & 0.021 & \cellcolor{bronze!30}3.469 & 1.680 \\
+    acs/csv-gpt & 0.022 & \cellcolor{silver!30}3.133 & 0.980 \\
+    acs/baseline_domain & 0.024 & 6.302 & \cellcolor{gold!30}0.532 \\
+    acs/baseline_univariate & 0.026 & 4.893 & 0.930 \\
+    acs/csv-claude & 0.028 & \cellcolor{gold!30}1.973 & 0.939 \\
+    \bottomrule
+    \end{tabular}
+\end{table}

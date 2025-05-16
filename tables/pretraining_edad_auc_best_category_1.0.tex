@@ -1,0 +1,21 @@
+\begin{table}[h!]
+    \centering
+    \caption{Mean AUC of the DP model on EDAD data after pretraining, grouped by generation method category. The mean is calculated across the DP finetuning hyperparameter space when best pretraining hyperparameter configuration is choosen for the pretraining step, with 10 runs per hyperparameter configuration.}
+    \label{tab:epsilon_comparison}
+    \begin{tabular}{lccccc}
+    \toprule
+    Method Category & $\varepsilon=1$ & $\varepsilon=2$ & $\varepsilon=4$ & $\varepsilon=8$ & $\varepsilon=16$ \\
+    \midrule
+    Without pretraining & .00 {\small (.65)} & .00 {\small (.69)} & .00 {\small (.71)} & .00 {\small (.74)} & .00 {\small (.76)} \\
+    \arrayrulecolor{black!50!}\midrule
+    Public & \cellcolor{gold!30}.19 {\small (.84)} & \cellcolor{gold!30}.12 {\small (.81)} & \cellcolor{gold!30}.13 {\small (.85)} & \cellcolor{gold!30}.08 {\small (.82)} & \cellcolor{gold!30}.09 {\small (.85)} \\
+    \arrayrulecolor{black!50!}\midrule
+    Baseline & .01 {\small (.67)} & -.03 {\small (.66)} & .01 {\small (.73)} & -.06 {\small (.69)} & .02 {\small (.78)} \\
+    \arrayrulecolor{black!50!}\midrule
+    Arbitrary & .04 {\small (.69)} & .03 {\small (.72)} & .03 {\small (.75)} & -.01 {\small (.74)} & .04 {\small (.80)} \\
+    \arrayrulecolor{black!50!}\midrule
+    CSV & \cellcolor{silver!30}.16 {\small (.81)} & \cellcolor{silver!30}.11 {\small (.79)} & \cellcolor{silver!30}.11 {\small (.82)} & \cellcolor{silver!30}.07 {\small (.82)} & \cellcolor{silver!30}.07 {\small (.83)} \\
+    Agent & \cellcolor{bronze!30}.15 {\small (.80)} & \cellcolor{bronze!30}.08 {\small (.77)} & \cellcolor{bronze!30}.09 {\small (.81)} & \cellcolor{bronze!30}.06 {\small (.80)} & \cellcolor{bronze!30}.07 {\small (.83)} \\
+    \bottomrule
+    \end{tabular}
+\end{table}

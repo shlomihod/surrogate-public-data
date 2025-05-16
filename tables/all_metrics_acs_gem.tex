@@ -1,0 +1,27 @@
+\begin{table}[t!]
+    \centering
+    \caption{ACS Metrics}
+    \label{tab:all_metrics_acs}
+    \resizebox{\linewidth}{!}{%
+    \begin{tabular}{lccc}
+    \toprule
+    Method & \% Degradation (Class.) & \% Degradation (Corr.) & \% Degradation (Marg.) \\
+    \midrule
+    acs/gen-claude-MIX-MAX & \cellcolor{gold!30}0.101 & 0.039 & 0.072 \\
+    acs/arbitrary & \cellcolor{silver!30}0.103 & \cellcolor{gold!30}0.023 & \cellcolor{silver!30}0.043 \\
+    acs/gen-gpt-MIX-UNIF & \cellcolor{bronze!30}0.166 & 0.100 & 0.059 \\
+    acs/csv-llama & 0.253 & 0.283 & 0.081 \\
+    acs/csv-gpt & 0.278 & \cellcolor{silver!30}0.028 & 0.061 \\
+    acs/gen-claude-MIX-UNIF & 0.312 & 0.106 & 0.056 \\
+    acs/baseline_domain & 0.315 & 1.308 & 0.155 \\
+    acs/massachusetts_upsampled & 0.398 & 0.070 & \cellcolor{gold!30}0.040 \\
+    acs/gen-gpt-MIX-MAX & 0.520 & \cellcolor{bronze!30}0.036 & 0.049 \\
+    acs/gen-llama-MIX-MAX & 0.535 & 0.037 & \cellcolor{bronze!30}0.045 \\
+    acs/gen-MIX-MAX & 0.553 & 0.147 & 0.074 \\
+    acs/gen-MIX-UNIF & 0.682 & 0.169 & 0.052 \\
+    acs/csv-claude & 0.736 & 0.100 & 0.058 \\
+    acs/gen-llama-MIX-UNIF & 0.965 & 0.238 & 0.063 \\
+    acs/baseline_univariate & 2.912 & 1.197 & 0.181 \\
+    \bottomrule
+    \end{tabular}}
+\end{table}

@@ -1,0 +1,24 @@
+\begin{table}[t!]
+    \centering
+    \caption{EDAD Metrics}
+    \label{tab:all_metrics_edad_gem}
+    \begin{tabular}{lccc}
+    \toprule
+    Method & \% Degradation (Class.) & \% Degradation (Corr.) & \% Degradation (Marg.) \\
+    \midrule
+    edad/gen-claude-MIX-UNIF & \cellcolor{gold!30}0.005 & 8.590 & 3.157 \\
+    edad/gen-gpt-MIX-UNIF & \cellcolor{silver!30}0.007 & 8.604 & 3.012 \\
+    edad/gen-claude-MIX-MAX & \cellcolor{bronze!30}0.009 & 8.996 & \cellcolor{bronze!30}2.861 \\
+    edad/baseline_domain & 0.012 & 8.488 & 3.074 \\
+    edad/baseline_univariate & 0.013 & \cellcolor{gold!30}7.612 & \cellcolor{gold!30}2.177 \\
+    edad/gen-MIX-UNIF & 0.015 & 8.497 & 2.914 \\
+    edad/2020 & 0.015 & \cellcolor{bronze!30}8.395 & \cellcolor{silver!30}2.499 \\
+    edad/gen-MIX-MAX & 0.017 & \cellcolor{silver!30}8.264 & 3.255 \\
+    edad/csv-llama & 0.019 & 13.052 & 5.642 \\
+    edad/gen-gpt-MIX-MAX & 0.019 & 8.710 & 2.969 \\
+    edad/csv-gpt & 0.021 & 9.940 & 3.523 \\
+    edad/csv-claude & 0.024 & 10.382 & 18.276 \\
+    edad/arbitrary & 0.146 & 10.106 & 3.231 \\
+    \bottomrule
+    \end{tabular}
+\end{table}

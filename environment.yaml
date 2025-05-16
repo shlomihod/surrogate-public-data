@@ -1,0 +1,41 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - plotly
+  - sdv
+  - nbformat
+  - pandera
+  - jupyter
+  - ipywidgets
+  - pip
+  - pip:
+    - --find-links https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+    - "jax[cuda]"
+    - ipykernel
+    - papermill
+    - python-dotenv
+    - wandb
+    - weave
+    - ray[default]
+    - smartnoise-synth
+    - git+https://github.com/ryan112358/private-pgm.git@b84fd83
+    - SciencePlots
+    - pyro-ppl
+    - openai
+    - python-statemachine
+    - ydata_profiling
+    - apricot-select
+    - langchain
+    - langchain-core
+    - langchain-openai
+    - langchain-anthropic
+    - langchain-community
+    - langchain-together
+    # - synthcity

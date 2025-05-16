@@ -1,0 +1,8 @@
+{
+  "dataset_version": "1.2",
+  "changelog": {
+    "1.0": ["Initial version"],
+    "1.1": ["Updated description of the feature PINCP_DECILE in the data_dictionary.json"],
+    "1.2": ["Updated INDP feature details in data_description.json file."]
+  }
+}

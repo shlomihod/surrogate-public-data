@@ -1,0 +1,255 @@
+{
+    "references": [
+      "https://www.openicpsr.org/openicpsr/project/202701/version/V1/view"
+    ],
+    "citation": "Lemieux, Camille, Taylor, Simone, Stone, Anne, Wooden, Paige, and Chauhan, Chhavi. Workplace Equity Survey 2023. Ann Arbor, MI: Inter-university Consortium for Political and Social Research, 2024-05-30. https://doi.org/10.3886/E202701V1",
+    "domain": "Workplace Equity Survey 2023",
+    "schema": {
+      "how_long_have_you_worked_for_your_current_employer": {
+        "description": "How long have you worked for your current employer?",
+        "dtype": "int64",
+        "values": {
+          "0": "10 years or less",
+          "1": "11 or more years"
+        }
+      },
+      "which_of_the_following_groups_best_describes_your_employment_level": {
+        "description": "Which of the following groups best describes your employment level?",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Entry-level",
+          "2": "Intermediate",
+          "3": "Mid-level",
+          "4": "Senior or executive-level",
+          "5": "Not listed (please specify)"
+        }
+      },
+      "which_of_the_following_groups_best_describes_the_organization_that_you_work_for": {
+        "description": "Which of the following groups best describes the organization that you work for?",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Academic Institution or Library",
+          "2": "Consulting (serving publishing)",
+          "3": "Foundation",
+          "4": "Industry organization/trade association",
+          "5": "Non-profit organization or association",
+          "6": "Not listed (please specify)",
+          "7": "Publisher (Commercial, Society, and University)",
+          "8": "Publishing Services Provider",
+          "9": "Technology/analytics"
+        }
+      },
+      "flexible_working_arrangements": {
+        "description": "Flexible working arrangements including but not limited to hybrid or remote work, short-term disability benefits, flex time/alternative schedules, job sharing, temporary or permanent switch to part time, and emergency leave.",
+        "dtype": "int64",
+        "values": {
+          "0": "No",
+          "1": "Yes"
+        }
+      },
+      "culturalreligious_practices": {
+        "description": "Cultural/religious practices including but not limited to extended or flexible holidays, dedicated prayer rooms.",
+        "dtype": "int64",
+        "values": {
+          "0": "No",
+          "1": "Yes"
+        }
+      },
+      "approximately_what_is_the_size_of_your_employer's_workforce": {
+        "description": "Approximately what is the size of your employer's workforce?",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "1",
+          "2": "2 to 10",
+          "3": "11 to 100",
+          "4": "101 to 500",
+          "5": "501 to 2,000",
+          "6": "2,001 to 10,000",
+          "7": "10,001 to 20,001+"
+        }
+      },
+      "i_believe_i_am_being_paid_fairly_for_the_work_that_i_do": {
+        "description": "I believe I am being paid fairly for the work that I do.",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Strongly disagree",
+          "2": "Disagree",
+          "3": "Not applicable",
+          "4": "Agree",
+          "5": "Strongly agree"
+        }
+      },
+      "family_commitments": {
+        "description": "Family commitments including but not limited to parental leave, bereavement leave, adoption/infertility support, child care supports, elder care supports.",
+        "dtype": "int64",
+        "values": {
+          "0": "No",
+          "1": "Yes"
+        }
+      },
+      "yes_one_or_more_children": {
+        "description": "Yes, one or more children",
+        "dtype": "int64",
+        "values": {
+          "0": "No",
+          "1": "Yes"
+        }
+      },
+      "leadership_opportunities": {
+        "description": "Leadership opportunities satisfaction",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Very dissatisfied",
+          "2": "Dissatisfied",
+          "3": "Not applicable",
+          "4": "Satisfied",
+          "5": "Very satisfied"
+        }
+      },
+      "black": {
+        "description": "Identifies as Black",
+        "dtype": "int64",
+        "values": {
+          "0": "No",
+          "1": "Yes"
+        }
+      },
+      "white": {
+        "description": "Identifies as White",
+        "dtype": "int64",
+        "values": {
+          "0": "No",
+          "1": "Yes"
+        }
+      },
+      "asian": {
+        "description": "Identifies as Asian",
+        "dtype": "int64",
+        "values": {
+          "0": "No",
+          "1": "Yes"
+        }
+      },
+      "latinaeox": {
+        "description": "Identifies as Latina/e/o/x",
+        "dtype": "int64",
+        "values": {
+          "0": "No",
+          "1": "Yes"
+        }
+      },
+      "recognition_from_colleaguespeers": {
+        "description": "Recognition from colleagues/peers",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Very dissatisfied",
+          "2": "Dissatisfied",
+          "3": "Not applicable",
+          "4": "Satisfied",
+          "5": "Very satisfied"
+        }
+      },
+      "what_country_do_you_currently_live_in": {
+        "description": "What country do you currently live in?",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Brazil",
+          "2": "Canada",
+          "3": "Germany",
+          "4": "India",
+          "5": "Mexico",
+          "6": "Netherlands",
+          "7": "South Africa",
+          "8": "Spain",
+          "9": "United Kingdom",
+          "10": "United States"
+        }
+      },
+      "is_your_first_language_the_primary_language_of_your_workplace_": {
+        "description": "Is your first language the primary language of your workplace?",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "No",
+          "2": "Not applicable",
+          "3": "Prefer not to answer",
+          "4": "Yes"
+        }
+      },
+      "socialize_with_peers_within_my_company": {
+        "description": "Socialize with peers within my company",
+        "dtype": "int64",
+        "values": {
+          "0": "No",
+          "1": "Yes"
+        }
+      },
+      "i_pursue_job_opportunities_even_if_i_do_not_fulfill_all_of_the_requirements_on_a_job_description": {
+        "description": "I pursue job opportunities even if I do not fulfill all of the requirements on a job description.",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Strongly disagree",
+          "2": "Disagree",
+          "3": "Not applicable",
+          "4": "Agree",
+          "5": "Strongly Agree"
+        }
+      },
+      "i_avoid_discussions_about_salary_and_incentives": {
+        "description": "I avoid discussions about salary and incentives.",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Strongly disagree",
+          "2": "Disagree",
+          "3": "Not applicable",
+          "4": "Agree",
+          "5": "Strongly agree"
+        }
+      },
+      "i_advocate_for_myself_when_appropriate_so_that_my_manager_knows_what_i_want_and_expect": {
+        "description": "I advocate for myself when appropriate so that my manager knows what I want and expect.",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Strongly disagree",
+          "2": "Disagree",
+          "3": "Not applicable",
+          "4": "Agree",
+          "5": "Strongly agree"
+        }
+      },
+      "i_trust_that_i_am_compensated_appropriately_for_my_accomplishments": {
+        "description": "I trust that I am compensated appropriately for my accomplishments.",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Strongly disagree",
+          "2": "Disagree",
+          "3": "Not applicable",
+          "4": "Agree",
+          "5": "Strongly agree"
+        }
+      },
+      "i_let_my_manager_know_what_i_want_with_the_expectation_that_it_will_generate_growth_opportunities": {
+        "description": "I let my manager know what I want, with the expectation that it will generate growth opportunities.",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Strongly disagree",
+          "2": "Disagree",
+          "3": "Not applicable",
+          "4": "Agree",
+          "5": "Strongly Agree"
+        }
+      }
+    }
+  }

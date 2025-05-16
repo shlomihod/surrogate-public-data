@@ -1,0 +1,26 @@
+\begin{table}[t!]
+    \centering
+    \caption{WE Metrics}
+    \label{tab:all_metrics_we_jax}
+    \begin{tabular}{lccc}
+    \toprule
+    Method & \% Degradation (Class.) & \% Degradation (Corr.) & \% Degradation (Marg.) \\
+    \midrule
+    we/baseline_domain & \cellcolor{gold!30}0.039 & \cellcolor{silver!30}2.668 & \cellcolor{silver!30}0.454 \\
+    we/baseline_univariate & \cellcolor{silver!30}0.041 & \cellcolor{gold!30}2.387 & \cellcolor{gold!30}0.035 \\
+    we/2018 & \cellcolor{bronze!30}0.060 & \cellcolor{bronze!30}3.930 & 0.969 \\
+    we/gen-MIX-UNIF & 0.087 & 5.370 & 2.061 \\
+    we/gen-MIX-MAX & 0.095 & 5.240 & 1.835 \\
+    we/gen-claude-MIX-UNIF & 0.104 & 5.135 & 0.983 \\
+    we/gen-gpt-MIX-UNIF & 0.105 & 6.135 & 2.387 \\
+    we/gen-llama-MIX-MAX & 0.116 & 4.928 & 2.037 \\
+    we/gen-gpt-MIX-MAX & 0.131 & 5.869 & 1.880 \\
+    we/gen-llama-MIX-UNIF & 0.153 & 4.077 & 1.360 \\
+    we/csv-claude & 0.208 & 9.067 & 3.645 \\
+    we/csv-gpt & 0.217 & 6.875 & 2.755 \\
+    we/csv-llama & 0.225 & 5.898 & 1.700 \\
+    we/arbitrary & 0.228 & 4.843 & 1.483 \\
+    we/gen-claude-MIX-MAX & 0.236 & 4.978 & \cellcolor{bronze!30}0.940 \\
+    \bottomrule
+    \end{tabular}
+\end{table}

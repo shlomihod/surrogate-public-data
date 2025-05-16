@@ -1,0 +1,130 @@
+{
+    "references": [
+      "https://www.openicpsr.org/openicpsr/project/202701/version/V1/view"
+    ],
+    "citation": "Lemieux, Camille, Taylor, Simone, Stone, Anne, Wooden, Paige, and Chauhan, Chhavi. Workplace Equity Survey 2023. Ann Arbor, MI: Inter-university Consortium for Political and Social Research, 2024-05-30. https://doi.org/10.3886/E202701V1",
+    "domain": "Workplace Equity Survey 2023",
+    "schema": {
+      "how_long_have_you_worked_for_your_current_employer": {
+        "description": "How long have you worked for your current employer?",
+        "dtype": "int64",
+        "values": {
+          "0": "10 years or less",
+          "1": "11 or more years"
+        }
+      },
+      "which_of_the_following_groups_best_describes_your_employment_level": {
+        "description": "Which of the following groups best describes your employment level (ternary-encoded)?",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing or Not listed",
+          "1": "Entry-level or Intermediate",
+          "2": "Mid-level or Senior/executive-level"
+        }
+      },
+      "approximately_what_is_the_size_of_your_employer's_workforce": {
+        "description": "Approximately what is the size of your employer's workforce (ternary-encoded)?",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing",
+          "1": "Less than 2,000 employees",
+          "2": "More than 2,000 employees"
+        }
+      },
+      "i_pursue_job_opportunities_even_if_i_do_not_fulfill_all_of_the_requirements_on_a_job_description": {
+        "description": "I pursue job opportunities even if I do not fulfill all of the requirements on a job description (ternary-encoded).",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing or Not applicable",
+          "1": "Disagree",
+          "2": "Agree"
+        }
+      },
+      "which_of_the_following_groups_best_describes_the_organization_that_you_work_for": {
+        "description": "Which of the following groups best describes the organization that you work for?",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Academic Institution or Library",
+          "2": "Consulting (serving publishing)",
+          "3": "Foundation",
+          "4": "Industry organization/trade association",
+          "5": "Non-profit organization or association",
+          "6": "Not listed (please specify)",
+          "7": "Publisher (Commercial, Society, and University)",
+          "8": "Publishing Services Provider",
+          "9": "Technology/analytics"
+        }
+      },
+      "leadership_opportunities": {
+        "description": "Leadership opportunities satisfaction (ternary-encoded).",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing or Not applicable",
+          "1": "Dissatisfied",
+          "2": "Satisfied"
+        }
+      },
+      "i_let_my_manager_know_what_i_want_with_the_expectation_that_it_will_generate_growth_opportunities": {
+        "description": "I let my manager know what I want, with the expectation that it will generate growth opportunities (ternary-encoded).",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing or Not applicable",
+          "1": "Disagree",
+          "2": "Agree"
+        }
+      },
+      "i_avoid_discussions_about_salary_and_incentives": {
+        "description": "I avoid discussions about salary and incentives (ternary-encoded).",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing or Not applicable",
+          "1": "Disagree",
+          "2": "Agree"
+        }
+      },
+      "what_country_do_you_currently_live_in": {
+        "description": "What country do you currently live in?",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing value",
+          "1": "Brazil",
+          "2": "Canada",
+          "3": "Germany",
+          "4": "India",
+          "5": "Mexico",
+          "6": "Netherlands",
+          "7": "South Africa",
+          "8": "Spain",
+          "9": "United Kingdom",
+          "10": "United States"
+        }
+      },
+      "i_trust_that_i_am_compensated_appropriately_for_my_accomplishments": {
+        "description": "I trust that I am compensated appropriately for my accomplishments (ternary-encoded).",
+        "dtype": "int64",
+        "values": {
+          "0": "Missing or Not applicable",
+          "1": "Disagree",
+          "2": "Agree"
+        }
+      },
+      "family_commitments": {
+        "description": "Family commitments including but not limited to parental leave, bereavement leave, adoption/infertility support, child care supports, elder care supports.",
+        "dtype": "int64",
+        "values": {
+          "0": "No",
+          "1": "Yes"
+        }
+      },
+      "yes_one_or_more_children": {
+        "description": "Yes, one or more children",
+        "dtype": "int64",
+        "values": {
+          "0": "No",
+          "1": "Yes"
+        }
+      }
+    }
+  }
+  

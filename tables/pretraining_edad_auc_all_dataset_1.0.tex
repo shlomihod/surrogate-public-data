@@ -1,0 +1,30 @@
+\begin{table}[h!]
+    \centering
+    \caption{Mean AUC of the DP model on EDAD data after pretraining, grouped by generation method. The mean is calculated across the hyperparameter space, with 10 runs per hyperparameter configuration.}
+    \label{tab:epsilon_comparison}
+    \begin{tabular}{lccccc}
+    \toprule
+    Method & $\varepsilon=1$ & $\varepsilon=2$ & $\varepsilon=4$ & $\varepsilon=8$ & $\varepsilon=16$ \\
+    \midrule
+    Without pretraining & .00 {\small (.65)} & .00 {\small (.69)} & .00 {\small (.71)} & .00 {\small (.74)} & .00 {\small (.76)} \\
+    \arrayrulecolor{black!50!}\midrule
+    Public & \cellcolor{bronze!30}.11 {\small (.76)} & \cellcolor{bronze!30}.09 {\small (.78)} & \cellcolor{bronze!30}.07 {\small (.79)} & \cellcolor{bronze!30}.06 {\small (.80)} & \cellcolor{gold!30}.06 {\small (.82)} \\
+    \arrayrulecolor{black!50!}\midrule
+    Baseline (Domain) & -.02 {\small (.63)} & -.01 {\small (.67)} & -.02 {\small (.69)} & -.02 {\small (.73)} & -.01 {\small (.75)} \\
+    Baseline (Univariate) & -.03 {\small (.62)} & -.01 {\small (.68)} & -.02 {\small (.70)} & -.03 {\small (.71)} & -.02 {\small (.74)} \\
+    \arrayrulecolor{black!50!}\midrule
+    Arbitrary & .01 {\small (.66)} & .01 {\small (.69)} & .00 {\small (.71)} & -.01 {\small (.74)} & .01 {\small (.77)} \\
+    \arrayrulecolor{black!50!}\midrule
+    CSV (Claude 3.5 Sonnet) & \cellcolor{gold!30}.11 {\small (.76)} & \cellcolor{gold!30}.09 {\small (.78)} & \cellcolor{silver!30}.08 {\small (.79)} & \cellcolor{silver!30}.07 {\small (.81)} & \cellcolor{silver!30}.06 {\small (.82)} \\
+    CSV (GPT-4o) & .09 {\small (.74)} & .08 {\small (.77)} & .06 {\small (.78)} & .06 {\small (.80)} & .05 {\small (.81)} \\
+    CSV (Llama 3.3 70B) & \cellcolor{silver!30}.11 {\small (.76)} & \cellcolor{silver!30}.09 {\small (.78)} & \cellcolor{gold!30}.08 {\small (.79)} & \cellcolor{gold!30}.07 {\small (.81)} & \cellcolor{bronze!30}.05 {\small (.81)} \\
+    \arrayrulecolor{black!50!}\midrule
+    Agent (Claude 3.5 Sonnet, Unif.) & .08 {\small (.73)} & .07 {\small (.76)} & .06 {\small (.77)} & .05 {\small (.80)} & .04 {\small (.81)} \\
+    Agent (Claude 3.5 Sonnet, Max Cov.) & .09 {\small (.74)} & .07 {\small (.76)} & .06 {\small (.78)} & .04 {\small (.79)} & .05 {\small (.81)} \\
+    Agent (GPT-4o, Unif.) & .07 {\small (.72)} & .06 {\small (.74)} & .05 {\small (.77)} & .04 {\small (.78)} & .04 {\small (.80)} \\
+    Agent (GPT-4o, Max Cov.) & .07 {\small (.72)} & .06 {\small (.75)} & .04 {\small (.76)} & .04 {\small (.79)} & .04 {\small (.80)} \\
+    Agent (Unif.) & .08 {\small (.73)} & .07 {\small (.75)} & .05 {\small (.77)} & .05 {\small (.79)} & .04 {\small (.81)} \\
+    Agent (Max Cov.) & .09 {\small (.74)} & .07 {\small (.76)} & .06 {\small (.78)} & .05 {\small (.79)} & .05 {\small (.81)} \\
+    \bottomrule
+    \end{tabular}
+\end{table}
